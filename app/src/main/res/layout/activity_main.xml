@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.activityfragment.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Benim Activity'im"
+        android:gravity="center"
+        android:textColorLink="@android:color/holo_green_light" />
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.activityfragment.MainFragment"
+        android:layout_below="@+id/textView"
+        android:layout_allignParentLeft="True"
+        android:layout_allignParentStart="True"
+        android:layout_marginTop="66dp"
+        android:id="@+id/fragment"
+        tools:layout="@layout/fragment_main" />
+
+    <FrameLayout
+        android:id="@+id/activity_main_frmSecondFragment"
+        android:layout_width="200dp"
+        android:layout_height="200dp"></FrameLayout>
+
+</LinearLayout>

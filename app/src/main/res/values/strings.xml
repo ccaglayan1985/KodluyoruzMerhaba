@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ActivityFragment</string>
+    <string name="secondfragment_textview">SecondFragment TextView</string>
+</resources>
