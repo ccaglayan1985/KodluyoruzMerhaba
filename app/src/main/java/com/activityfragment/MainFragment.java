@@ -1,5 +1,6 @@
 package com.activityfragment;
 
+import android.animation.Animator;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -59,8 +60,8 @@ public class MainFragment extends Fragment{
 
 
     @Override
-    public void onViewCreated(View view, Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
+    public Animator onCreateAnimator(int transit, boolean enter, int nextAnim) {
+        return super.onCreateAnimator(transit, enter, nextAnim);
     }
 
     @Override
